@@ -25,6 +25,7 @@ function ListProduct(props) {
                     <th>Price</th>
                     <th>Type</th>
                 </tr>
+                
                 {
                     listProducts ? listProducts.map((item, index) => (<Product product={item} key={item._id} update={item._id} number={index}></Product>)) : ''
                 }
